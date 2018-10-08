@@ -28,4 +28,11 @@ describe('add-functions', () => {
 
     assert.deepEqual(foo, [0, 1, 2, 3])
   })
+
+  it('propagates return values', () => {
+    const add1 = n => n + 1
+    const add1Prev = (n, prev) => n + prev(n) + 1
+
+    assert.equal(addFunctions(add1, add1Prev, add1Prev)(0), 3)
+  })
 })
