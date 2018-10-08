@@ -10,7 +10,7 @@ Adds one or more functions together. Functions will take an additional callOrigi
 ```javascript
 
 const a = n => n + 1
-const b = (n, callPrevious) => n + callPrevious(n) + 1
+const b = (n, callPrevious) => n + callPrevious() + 1
 
 const c = addFunctions(a, b)
 
