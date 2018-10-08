@@ -12,7 +12,7 @@ describe('add-functions', () => {
       foo.push(original + 1)
     }, (original, callOriginal) => {
       foo.push(original)
-      callOriginal(original)
+      callOriginal()
       foo.push(original + 2)
     })(1)
 
@@ -24,8 +24,8 @@ describe('add-functions', () => {
 
     addFunctions(
       original => { foo.push(original + 1) },
-      (original, callOriginal) => { foo.push(original); callOriginal(original); foo.push(original + 2) },
-      (original, callOriginal) => { callOriginal(original); foo.push(original + 3) }
+      (original, callOriginal) => { foo.push(original); callOriginal(); foo.push(original + 2) },
+      (original, callOriginal) => { callOriginal(); foo.push(original + 3) }
     )(0)
 
     assert.deepEqual(foo, [0, 1, 2, 3])
