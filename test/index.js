@@ -1,6 +1,8 @@
 'use strict'
 
-const assert = require('assert').strict
+let assert = require('assert')
+if (assert.strict) assert = assert.strict
+
 const addFunctions = require('..')
 
 describe('add-functions', () => {
