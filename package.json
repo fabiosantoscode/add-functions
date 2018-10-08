@@ -1,6 +1,6 @@
 {
   "name": "add-functions",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Add two functions together and choose when the original one gets called!",
   "main": "lib/index.js",
   "scripts": {
