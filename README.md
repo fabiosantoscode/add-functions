@@ -1,4 +1,7 @@
 # add-functions
+
+[![Build Status](https://travis-ci.org/fabiosantoscode/add-functions.svg?branch=master)](https://travis-ci.org/fabiosantoscode/add-functions) [![Coverage Status](https://coveralls.io/repos/github/fabiosantoscode/add-functions/badge.svg)](https://coveralls.io/github/fabiosantoscode/add-functions)
+
 Add two functions together and choose when the original one gets called!
 
 # require('add-functions')(a, (callOriginal) => { callOriginal(); foo()})
