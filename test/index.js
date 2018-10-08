@@ -35,4 +35,10 @@ describe('add-functions', () => {
 
     assert.equal(addFunctions(add1, add1Prev, add1Prev)(0), 3)
   })
+
+  it('you can call the previous function on the first function, but it does nothing', () => {
+    addFunctions((callPrevious) => {
+      assert.equal(callPrevious(), null)
+    })()
+  })
 })
