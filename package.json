@@ -1,0 +1,29 @@
+{
+  "name": "add-functions",
+  "version": "1.0.0",
+  "description": "Add two functions together and choose when the original one gets called!",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "istanbul cover ./node_modules/.bin/_mocha",
+    "precommit": "npm run lint --silent && npm run test --silent",
+    "lint": "standard --fix 'lib/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiosantoscode/add-functions.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabiosantoscode/add-functions/issues"
+  },
+  "homepage": "https://github.com/fabiosantoscode/add-functions#readme",
+  "devDependencies": {
+    "husky": "^1.1.1",
+    "istanbul": "^1.1.0-alpha.1",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}
