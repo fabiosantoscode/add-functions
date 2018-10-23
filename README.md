@@ -20,7 +20,7 @@ c(0)  // -> 2
 ```javascript
 const asynchronouslyAdd2 = addFunctions(
     () => getPromise(),
-    (previous) => previous().then((p => p + 1)),
-    (previous) => previous().then((p => p + 1)),
+    previous => previous().then(p => p + 1),
+    previous => previous().then(p => p + 1),
 )
 ```
