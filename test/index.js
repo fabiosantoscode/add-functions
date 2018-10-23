@@ -3,7 +3,7 @@
 let assert = require('assert')
 if (assert.strict) assert = assert.strict
 
-const addFunctions = require('..')
+const addFunctions = require('../src')
 
 describe('add-functions', () => {
   it('adds two functions', () => {
