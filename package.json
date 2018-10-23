@@ -4,7 +4,7 @@
   "description": "Add two functions together and choose when the original one gets called!",
   "main": "lib/index.js",
   "scripts": {
-    "test": "istanbul cover ./node_modules/.bin/_mocha --require=babel-register",
+    "test": "istanbul cover ./node_modules/.bin/_mocha",
     "prepare": "babel --presets env src -d lib",
     "precommit": "npm run lint --silent && npm run test --silent && npm run coveralls --silent",
     "coveralls": "coveralls < coverage/lcov.info",
@@ -23,7 +23,6 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
     "coveralls": "^3.0.2",
     "husky": "^1.1.1",
     "istanbul": "^1.1.0-alpha.1",
