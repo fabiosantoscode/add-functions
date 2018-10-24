@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "istanbul cover ./node_modules/.bin/_mocha",
-    "prepare": "babel --presets env src -d lib",
+    "prepare": "babel src -d lib",
     "precommit": "npm run lint --silent && npm run test --silent && npm run coveralls --silent",
     "coveralls": "coveralls < coverage/lcov.info",
     "lint": "standard --fix 'lib/**/*.js'"
